@@ -6,18 +6,11 @@ import { omit, type StringWithAutoComplete } from '@riadh-adrani/utils';
 const defineSkillCategory = <S extends string>(data: SkillCategory<S>): SkillCategory<S> => data;
 
 const categories = [
-	defineSkillCategory({ name: 'Programming Languages', slug: 'pro-lang' }),
-	defineSkillCategory({ name: 'Frameworks', slug: 'framework' }),
-	defineSkillCategory({ name: 'Libraries', slug: 'library' }),
-	defineSkillCategory({ name: 'Langauges', slug: 'lang' }),
-	defineSkillCategory({ name: 'Databases', slug: 'db' }),
-	defineSkillCategory({ name: 'ORMs', slug: 'orm' }),
-	defineSkillCategory({ name: 'DevOps', slug: 'devops' }),
-	defineSkillCategory({ name: 'Testing', slug: 'test' }),
-	defineSkillCategory({ name: 'Dev Tools', slug: 'devtools' }),
-	defineSkillCategory({ name: 'Markup & Style', slug: 'markup-style' }),
-	defineSkillCategory({ name: 'Design', slug: 'design' }),
-	defineSkillCategory({ name: 'Soft Skills', slug: 'soft' })
+	defineSkillCategory({ name: 'ERP & Tools', slug: 'erp-tools' }),
+	defineSkillCategory({ name: 'Analytics & BI', slug: 'analytics' }),
+	defineSkillCategory({ name: 'Procurement Platforms', slug: 'procurement' }),
+	defineSkillCategory({ name: 'Procurement Skills', slug: 'proc-skills' }),
+	defineSkillCategory({ name: 'Technical Skills', slug: 'tech-skills' })
 ] as const;
 
 const defineSkill = <S extends string>(
@@ -36,66 +29,124 @@ const defineSkill = <S extends string>(
 
 export const items = [
 	defineSkill({
-		slug: 'js',
+		slug: 'sap',
+		color: 'blue',
+		description: 'Enterprise resource planning system for procurement and supply chain management',
+		logo: Assets.Unknown,
+		name: 'SAP',
+		category: 'erp-tools'
+	}),
+	defineSkill({
+		slug: 'oracle',
+		color: 'red',
+		description: 'Oracle ERP Cloud for procurement, finance, and supply chain operations',
+		logo: Assets.Unknown,
+		name: 'Oracle',
+		category: 'erp-tools'
+	}),
+	defineSkill({
+		slug: 'powerbi',
 		color: 'yellow',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.JavaScript,
-		name: 'Javascript',
-		category: 'pro-lang'
+		description: 'Business intelligence and analytics platform for data visualization and reporting',
+		logo: Assets.Unknown,
+		name: 'Power BI',
+		category: 'analytics'
 	}),
 	defineSkill({
-		slug: 'ts',
-		color: 'blue',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.TypeScript,
-		name: 'Typescript',
-		category: 'pro-lang'
-	}),
-	defineSkill({
-		slug: 'css',
-		color: 'blue',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.CSS,
-		name: 'CSS',
-		category: 'markup-style'
-	}),
-	defineSkill({
-		slug: 'html',
+		slug: 'tableau',
 		color: 'orange',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.HTML,
-		name: 'HTML',
-		category: 'markup-style'
+		description: 'Data visualization and business intelligence tool for analytics',
+		logo: Assets.Unknown,
+		name: 'Tableau',
+		category: 'analytics'
 	}),
 	defineSkill({
-		slug: 'sass',
-		color: 'pink',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.Sass,
-		name: 'Sass',
-		category: 'markup-style'
+		slug: 'sql',
+		color: 'blue',
+		description: 'Structured Query Language for database management and analysis',
+		logo: Assets.Unknown,
+		name: 'SQL',
+		category: 'tech-skills'
 	}),
 	defineSkill({
-		slug: 'reactjs',
+		slug: 'gepsmart',
+		color: 'green',
+		description: 'Cloud-native procurement software for sourcing and contract management',
+		logo: Assets.Unknown,
+		name: 'GEP Smart',
+		category: 'procurement'
+	}),
+	defineSkill({
+		slug: 'jaggaer',
+		color: 'purple',
+		description: 'Procurement and supply chain platform',
+		logo: Assets.Unknown,
+		name: 'Jaggaer',
+		category: 'procurement'
+	}),
+	defineSkill({
+		slug: 'ivalua',
 		color: 'cyan',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.ReactJs,
-		name: 'React Js',
-		category: 'library'
+		description: 'Source-to-Pay platform for procurement and supplier management',
+		logo: Assets.Unknown,
+		name: 'Ivalua',
+		category: 'procurement'
 	}),
 	defineSkill({
-		slug: 'svelte',
+		slug: 'coupa',
+		color: 'red',
+		description: 'Cloud platform for business spend management',
+		logo: Assets.Unknown,
+		name: 'Coupa',
+		category: 'procurement'
+	}),
+	defineSkill({
+		slug: 'ariba',
+		color: 'blue',
+		description: 'SAP Ariba procurement and supply chain collaboration platform',
+		logo: Assets.Unknown,
+		name: 'Ariba',
+		category: 'procurement'
+	}),
+	defineSkill({
+		slug: 'negotiation',
+		color: 'green',
+		description: 'Strategic negotiation for supplier contracts and cost optimization',
+		logo: Assets.Unknown,
+		name: 'Negotiation',
+		category: 'proc-skills'
+	}),
+	defineSkill({
+		slug: 'costmodelling',
 		color: 'orange',
-		description: svelte,
-		logo: Assets.Svelte,
-		name: 'Svelte',
-		category: 'library'
+		description: 'Should-cost analysis and TCO modeling for procurement decisions',
+		logo: Assets.Unknown,
+		name: 'Cost Modelling',
+		category: 'proc-skills'
+	}),
+	defineSkill({
+		slug: 'rfx',
+		color: 'purple',
+		description: 'RFI, RFQ, and RFP management for supplier selection',
+		logo: Assets.Unknown,
+		name: 'RFx Management',
+		category: 'proc-skills'
+	}),
+	defineSkill({
+		slug: 'srm',
+		color: 'blue',
+		description: 'Supplier Relationship Management and performance tracking',
+		logo: Assets.Unknown,
+		name: 'SRM',
+		category: 'proc-skills'
+	}),
+	defineSkill({
+		slug: 'excel',
+		color: 'green',
+		description: 'Advanced Excel for data analysis and reporting',
+		logo: Assets.Unknown,
+		name: 'Excel',
+		category: 'analytics'
 	})
 ] as const;
 

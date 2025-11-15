@@ -3,28 +3,28 @@ import type { Education } from '../types';
 
 export const items: Array<Education> = [
 	{
-		degree: 'Bachelor degree of Computer Science',
-		description: '',
-		location: 'Tunisia',
+		degree: 'Masters in Global Supply Chain Management (STEM)',
+		description: 'Awarded Scholarship',
+		location: 'West Lafayette, USA',
 		logo: Assets.Unknown,
 		name: '',
-		organization: 'ISTIC',
-		period: { from: new Date(2020, 0, 1), to: new Date(2022, 5, 1) },
-		shortDescription: '',
-		slug: 'dummy-education-item',
-		subjects: ['C', 'Algorithm', 'Algebra', 'Python', 'C++', 'Java', 'English']
+		organization: 'Purdue University, Daniels School of Business',
+		period: { from: new Date(2024, 7, 1), to: new Date(2025, 11, 1) },
+		shortDescription: 'STEM Masters program with scholarship',
+		slug: 'purdue-masters',
+		subjects: ['Supply Chain Management', 'Strategic Sourcing', 'Procurement', 'Analytics', 'Operations']
 	},
 	{
-		degree: 'PhD of Computer Science',
+		degree: 'Bachelors in Textile Technology',
 		description: '',
-		location: 'USA',
+		location: 'Mumbai, India',
 		logo: Assets.Unknown,
 		name: '',
-		organization: 'MIT',
-		period: { from: new Date(2023, 0, 1) },
-		shortDescription: '',
-		slug: 'dummy-education-item-2',
-		subjects: ['Assembly', 'Rust', 'Computer Architecture', 'Algorithms and Data structures']
+		organization: 'VJTI, University of Mumbai',
+		period: { from: new Date(2015, 3, 1), to: new Date(2019, 3, 1) },
+		shortDescription: 'Bachelors degree in Textile Technology',
+		slug: 'vjti-bachelors',
+		subjects: ['Textile Engineering', 'Manufacturing', 'Quality Control', 'Supply Chain']
 	}
 ];
 
