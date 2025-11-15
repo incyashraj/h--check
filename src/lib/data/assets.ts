@@ -91,7 +91,7 @@ const Assets = {
 	TheWeaver: a('weaver.png'),
 	// Universities
 	Purdue: a('purdue.png'),
-	VJTI: a('vjti.png')
+	VJTI: a('vjti.svg')
 };
 
 export default Assets;
