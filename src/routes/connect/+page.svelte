@@ -26,23 +26,8 @@
 
 			<!-- Calendly inline widget begin -->
 			<div class="calendly-inline-widget"
-				data-url="https://calendly.com/your-calendly-username/30min"
+				data-url="https://calendly.com/hemaja31/30min"
 				style="min-width:320px;height:700px;">
-			</div>
-
-			<div class="calendly-placeholder">
-				<div class="placeholder-content">
-					<i class="i-carbon-calendar text-4em"></i>
-					<h4>Scheduling Integration</h4>
-					<p>To enable scheduling:</p>
-					<ol>
-						<li>Create a free <a href="https://calendly.com" target="_blank" rel="noopener">Calendly</a> account</li>
-						<li>Set up your availability and meeting types</li>
-						<li>Replace the data-url in this page with your Calendly link</li>
-						<li>Add the Calendly widget script to the app.html file</li>
-					</ol>
-					<p class="alternative">Or contact me directly at: <strong>hpardesh@purdue.edu</strong></p>
-				</div>
 			</div>
 			<!-- Calendly inline widget end -->
 		</div>
@@ -110,63 +95,6 @@
 		}
 	}
 
-	.calendly-placeholder {
-		background: var(--main-hover);
-		border: 2px dashed var(--border);
-		border-radius: 10px;
-		padding: 40px;
-		text-align: center;
-
-		.placeholder-content {
-			i {
-				color: var(--accent-text);
-				margin-bottom: 20px;
-			}
-
-			h4 {
-				font-size: 1.3em;
-				margin-bottom: 15px;
-				color: var(--main-text);
-			}
-
-			p {
-				color: var(--secondary-text);
-				margin-bottom: 15px;
-				line-height: 1.6;
-			}
-
-			ol {
-				text-align: left;
-				max-width: 500px;
-				margin: 20px auto;
-				color: var(--secondary-text);
-
-				li {
-					margin-bottom: 10px;
-					line-height: 1.5;
-				}
-
-				a {
-					color: var(--accent-text);
-					text-decoration: underline;
-				}
-			}
-
-			.alternative {
-				margin-top: 20px;
-				font-size: 1.1em;
-
-				strong {
-					color: var(--accent-text);
-				}
-			}
-		}
-	}
-
-	/* Hide placeholder when Calendly is active */
-	.calendly-inline-widget:not(:empty) ~ .calendly-placeholder {
-		display: none;
-	}
 
 	.contact-options {
 		margin-top: 40px;
