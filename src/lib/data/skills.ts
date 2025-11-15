@@ -32,7 +32,7 @@ export const items = [
 		slug: 'sap',
 		color: 'blue',
 		description: 'Enterprise resource planning system for procurement and supply chain management',
-		logo: Assets.Unknown,
+		logo: Assets.SAP,
 		name: 'SAP',
 		category: 'erp-tools'
 	}),
@@ -40,7 +40,7 @@ export const items = [
 		slug: 'oracle',
 		color: 'red',
 		description: 'Oracle ERP Cloud for procurement, finance, and supply chain operations',
-		logo: Assets.Unknown,
+		logo: Assets.Oracle,
 		name: 'Oracle',
 		category: 'erp-tools'
 	}),
@@ -48,7 +48,7 @@ export const items = [
 		slug: 'powerbi',
 		color: 'yellow',
 		description: 'Business intelligence and analytics platform for data visualization and reporting',
-		logo: Assets.Unknown,
+		logo: Assets.PowerBI,
 		name: 'Power BI',
 		category: 'analytics'
 	}),
@@ -56,7 +56,7 @@ export const items = [
 		slug: 'tableau',
 		color: 'orange',
 		description: 'Data visualization and business intelligence tool for analytics',
-		logo: Assets.Unknown,
+		logo: Assets.Tableau,
 		name: 'Tableau',
 		category: 'analytics'
 	}),
@@ -64,7 +64,7 @@ export const items = [
 		slug: 'sql',
 		color: 'blue',
 		description: 'Structured Query Language for database management and analysis',
-		logo: Assets.Unknown,
+		logo: Assets.PostgreSQL,
 		name: 'SQL',
 		category: 'tech-skills'
 	}),
@@ -72,7 +72,7 @@ export const items = [
 		slug: 'gepsmart',
 		color: 'green',
 		description: 'Cloud-native procurement software for sourcing and contract management',
-		logo: Assets.Unknown,
+		logo: Assets.GEPSmart,
 		name: 'GEP Smart',
 		category: 'procurement'
 	}),
@@ -80,7 +80,7 @@ export const items = [
 		slug: 'jaggaer',
 		color: 'purple',
 		description: 'Procurement and supply chain platform',
-		logo: Assets.Unknown,
+		logo: Assets.Jaggaer,
 		name: 'Jaggaer',
 		category: 'procurement'
 	}),
@@ -88,7 +88,7 @@ export const items = [
 		slug: 'ivalua',
 		color: 'cyan',
 		description: 'Source-to-Pay platform for procurement and supplier management',
-		logo: Assets.Unknown,
+		logo: Assets.Ivalua,
 		name: 'Ivalua',
 		category: 'procurement'
 	}),
@@ -96,7 +96,7 @@ export const items = [
 		slug: 'coupa',
 		color: 'red',
 		description: 'Cloud platform for business spend management',
-		logo: Assets.Unknown,
+		logo: Assets.Coupa,
 		name: 'Coupa',
 		category: 'procurement'
 	}),
@@ -104,7 +104,7 @@ export const items = [
 		slug: 'ariba',
 		color: 'blue',
 		description: 'SAP Ariba procurement and supply chain collaboration platform',
-		logo: Assets.Unknown,
+		logo: Assets.Ariba,
 		name: 'Ariba',
 		category: 'procurement'
 	}),
@@ -144,7 +144,7 @@ export const items = [
 		slug: 'excel',
 		color: 'green',
 		description: 'Advanced Excel for data analysis and reporting',
-		logo: Assets.Unknown,
+		logo: Assets.Excel,
 		name: 'Excel',
 		category: 'analytics'
 	})

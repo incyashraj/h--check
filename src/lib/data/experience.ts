@@ -15,7 +15,7 @@ export const items: Array<Experience> = [
 		name: 'Sourcing Intern',
 		color: 'orange',
 		links: [],
-		logo: Assets.Unknown,
+		logo: Assets.DoosanBobcat,
 		shortDescription: 'Managed 50+ indirect sourcing projects achieving $500K+ in cost savings'
 	},
 	{
@@ -30,7 +30,7 @@ export const items: Array<Experience> = [
 		name: 'Procurement Manager - Capex, IT, Facilities',
 		color: 'blue',
 		links: [],
-		logo: Assets.Unknown,
+		logo: Assets.Enphase,
 		shortDescription: 'Led procurement team achieving $10M+ savings, managed $80M CapEx spend'
 	},
 	{
@@ -45,7 +45,7 @@ export const items: Array<Experience> = [
 		name: 'Indirect Procurement - IT (hardware/software) Commodity',
 		color: 'green',
 		links: [],
-		logo: Assets.Unknown,
+		logo: Assets.Trident,
 		shortDescription: 'Managed $110M+ IT procurement, achieved $10M savings'
 	},
 	{
@@ -60,7 +60,7 @@ export const items: Array<Experience> = [
 		name: 'Supply Chain Executive',
 		color: 'purple',
 		links: [],
-		logo: Assets.Unknown,
+		logo: Assets.TheWeaver,
 		shortDescription: 'Managed $2M indirect spend, improved delivery rate to 97%'
 	}
 ];

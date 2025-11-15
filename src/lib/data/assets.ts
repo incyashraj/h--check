@@ -70,7 +70,28 @@ const Assets = {
 	Jest: a('jest.png'),
 	Unocss: a('unocss.svg'),
 	Ruvy: a('ruvy.svg'),
-	Postcss: a('postcss.svg')
+	Postcss: a('postcss.svg'),
+	// ERP & Tools
+	SAP: a('sap.png'),
+	Oracle: a('oracle.png'),
+	// Analytics & BI
+	PowerBI: a('powerbi.png'),
+	Tableau: a('tableau.png'),
+	Excel: a('excel.png'),
+	// Procurement Platforms
+	GEPSmart: a('gep.png'),
+	Jaggaer: a('jaggaer.png'),
+	Ivalua: a('ivalua.png'),
+	Coupa: a('coupa.png'),
+	Ariba: a('ariba.png'),
+	// Companies
+	DoosanBobcat: a('doosan-bobcat.png'),
+	Enphase: a('enphase.png'),
+	Trident: a('trident.png'),
+	TheWeaver: a('weaver.png'),
+	// Universities
+	Purdue: a('purdue.png'),
+	VJTI: a('vjti.png')
 };
 
 export default Assets;

@@ -11,7 +11,7 @@ export const items: Array<Project> = [
 		shortDescription:
 			'Managed $80M CapEx spend for new office/facility setup, sourcing IT, networking, and infrastructure components',
 		links: [],
-		logo: Assets.Unknown,
+		logo: Assets.Enphase,
 		name: 'CapEx Optimization Program',
 		period: {
 			from: new Date(2022, 4, 1),
@@ -28,7 +28,7 @@ export const items: Array<Project> = [
 		shortDescription:
 			'Optimized P2P efficiency from 69% → 99%, saving 4 hrs/day through process automation',
 		links: [],
-		logo: Assets.Unknown,
+		logo: Assets.Oracle,
 		name: 'P2P Process Optimization',
 		period: {
 			from: new Date(2023, 0, 1),
@@ -45,7 +45,7 @@ export const items: Array<Project> = [
 		shortDescription:
 			'Built supplier risk dashboards with 10+ KPIs, improving compliance by 12%',
 		links: [],
-		logo: Assets.Unknown,
+		logo: Assets.PowerBI,
 		name: 'Supplier Risk Management Dashboard',
 		period: {
 			from: new Date(2022, 6, 1),
@@ -62,7 +62,7 @@ export const items: Array<Project> = [
 		shortDescription:
 			'Led M&A integration: migrated supplier data and trained 100+ suppliers & 500+ employees on Oracle',
 		links: [],
-		logo: Assets.Unknown,
+		logo: Assets.Enphase,
 		name: 'Clipper Creek Integration',
 		period: {
 			from: new Date(2023, 6, 1),
